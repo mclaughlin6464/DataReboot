@@ -1,0 +1,8 @@
+COMPUTERNAME = 687MPLAB1
+INST = C:\MeasurementConfig\config.txt
+GAS = C:\MeasurementConfig\GASconfig.txt
+PRESET = C:\MeasurementConfig\PresetConfig.txt
+COMPUTERNAME = 687SPINTRONICS2
+INST = C:\MeasurementConfig\config.txt
+GAS = C:\MeasurementConfig\GASconfig.txt
+PRESET = C:\MeasurementConfig\PresetConfig.txt

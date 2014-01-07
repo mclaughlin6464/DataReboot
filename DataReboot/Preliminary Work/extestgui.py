@@ -1,0 +1,120 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'extestgui.ui'
+#
+# Created: Wed Jun 19 11:43:45 2013
+#      by: PyQt4 UI code generator 4.9.5
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
+class Ui_ExTestGUI(object):
+    def setupUi(self, ExTestGUI):
+        ExTestGUI.setObjectName(_fromUtf8("ExTestGUI"))
+        ExTestGUI.resize(802, 600)
+        self.centralwidget = QtGui.QWidget(ExTestGUI)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.gridLayout = QtGui.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.horizontalLayout.addWidget(self.label)
+        self.edit_config = QtGui.QLineEdit(self.centralwidget)
+        self.edit_config.setObjectName(_fromUtf8("edit_config"))
+        self.horizontalLayout.addWidget(self.edit_config)
+        self.button_config = QtGui.QPushButton(self.centralwidget)
+        self.button_config.setObjectName(_fromUtf8("button_config"))
+        self.horizontalLayout.addWidget(self.button_config)
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.horizontalLayout.addWidget(self.label_2)
+        self.edit_data = QtGui.QLineEdit(self.centralwidget)
+        self.edit_data.setObjectName(_fromUtf8("edit_data"))
+        self.horizontalLayout.addWidget(self.edit_data)
+        self.button_data = QtGui.QPushButton(self.centralwidget)
+        self.button_data.setObjectName(_fromUtf8("button_data"))
+        self.horizontalLayout.addWidget(self.button_data)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        self.label_6 = QtGui.QLabel(self.centralwidget)
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.horizontalLayout_2.addWidget(self.label_6)
+        self.comboBox = QtGui.QComboBox(self.centralwidget)
+        self.comboBox.setObjectName(_fromUtf8("comboBox"))
+        self.comboBox.addItem(_fromUtf8(""))
+        self.comboBox.addItem(_fromUtf8(""))
+        self.horizontalLayout_2.addWidget(self.comboBox)
+        self.label_4 = QtGui.QLabel(self.centralwidget)
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.horizontalLayout_2.addWidget(self.label_4)
+        self.edit_dataPoints = QtGui.QLineEdit(self.centralwidget)
+        self.edit_dataPoints.setObjectName(_fromUtf8("edit_dataPoints"))
+        self.horizontalLayout_2.addWidget(self.edit_dataPoints)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
+        self.horizontalLayout_3 = QtGui.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
+        self.label_3 = QtGui.QLabel(self.centralwidget)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.horizontalLayout_3.addWidget(self.label_3)
+        self.edit_maxF = QtGui.QLineEdit(self.centralwidget)
+        self.edit_maxF.setObjectName(_fromUtf8("edit_maxF"))
+        self.horizontalLayout_3.addWidget(self.edit_maxF)
+        self.label_5 = QtGui.QLabel(self.centralwidget)
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.horizontalLayout_3.addWidget(self.label_5)
+        self.edit_minF = QtGui.QLineEdit(self.centralwidget)
+        self.edit_minF.setObjectName(_fromUtf8("edit_minF"))
+        self.horizontalLayout_3.addWidget(self.edit_minF)
+        self.gridLayout.addLayout(self.horizontalLayout_3, 2, 0, 1, 1)
+        self.verticalLayout = QtGui.QVBoxLayout()
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.plot_widget = PlotWidget(self.centralwidget)
+        self.plot_widget.setObjectName(_fromUtf8("plot_widget"))
+        self.verticalLayout.addWidget(self.plot_widget)
+        self.gridLayout.addLayout(self.verticalLayout, 3, 0, 1, 1)
+        self.horizontalLayout_4 = QtGui.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(_fromUtf8("horizontalLayout_4"))
+        self.button_go = QtGui.QPushButton(self.centralwidget)
+        self.button_go.setObjectName(_fromUtf8("button_go"))
+        self.horizontalLayout_4.addWidget(self.button_go)
+        self.button_abort = QtGui.QPushButton(self.centralwidget)
+        self.button_abort.setObjectName(_fromUtf8("button_abort"))
+        self.horizontalLayout_4.addWidget(self.button_abort)
+        self.gridLayout.addLayout(self.horizontalLayout_4, 4, 0, 1, 1)
+        ExTestGUI.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(ExTestGUI)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 802, 21))
+        self.menubar.setObjectName(_fromUtf8("menubar"))
+        ExTestGUI.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(ExTestGUI)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        ExTestGUI.setStatusBar(self.statusbar)
+
+        self.retranslateUi(ExTestGUI)
+        QtCore.QMetaObject.connectSlotsByName(ExTestGUI)
+
+    def retranslateUi(self, ExTestGUI):
+        ExTestGUI.setWindowTitle(QtGui.QApplication.translate("ExTestGUI", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("ExTestGUI", "Config File", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_config.setText(QtGui.QApplication.translate("ExTestGUI", "Open", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("ExTestGUI", "Data File", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_data.setText(QtGui.QApplication.translate("ExTestGUI", "Open", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("ExTestGUI", "Voltage Reading", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox.setItemText(0, QtGui.QApplication.translate("ExTestGUI", "Lock-In", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox.setItemText(1, QtGui.QApplication.translate("ExTestGUI", "Nanovoltmeter", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_4.setText(QtGui.QApplication.translate("ExTestGUI", "No. of Data Points", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("ExTestGUI", "Max Field (kG)", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("ExTestGUI", "Min Field (kG)", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_go.setText(QtGui.QApplication.translate("ExTestGUI", "Go!", None, QtGui.QApplication.UnicodeUTF8))
+        self.button_abort.setText(QtGui.QApplication.translate("ExTestGUI", "Abort Measurement", None, QtGui.QApplication.UnicodeUTF8))
+
+from pyqtgraph import PlotWidget

@@ -1,0 +1,96 @@
+#Initial States of Connected Instruments
+#_______________
+#Type = Voltmeter 181
+#Resource Address = GPIB0::9
+#ID = NONE
+#Initial Voltage = 0.000045 V
+#_______________
+#Type = FSP38
+#Resource Address = GPIB0::20
+#ID = Rohde&Schwarz,FSP-38,100037/038,3.50
+#Reference Level = 0.00 W
+#RES Bandwidth = 1.00e+07 Hz
+#Range = (2.00e+09, 1.90e+10) Hz
+#Sweep Count = 6
+#Sweep Points = 1001
+#Amplitude Unit = W
+#
+#_______________
+#Type = Lock-in Amplifier
+#Resource Address = GPIB0::24
+#ID = Stanford_Research_Systems,SR830,s/n83855,ver1.07 
+#Time Constant = 0.1
+#Sensitivity = 500 uV/pA
+#Reference Frequency = 408.200000 Hz
+#Sine Amplitude = 1.000000 V
+#Reference Source = Internal
+#Filter Status = Both
+#
+#_______________
+#Type = Gaussmeter 455
+#Resource Address = GPIB0::12
+#ID = LSCI,MODEL455,4550271,06062006
+#Initial Field = 0.006560 T
+#_______________
+#Type = AN 68369A
+#Resource Address = GPIB0::21
+#ID = ANRITSU,68367C,030310,2.31
+#
+#_______________
+#Indicies of Loops
+#__Loop 1__
+#
+#__Loop 2__
+#
+#__Loop 3__
+#(0, 6)
+#_______________
+#__READER__
+#
+#Name = GetField
+#Class Type = getBField
+#Instrument = Gaussmeter 455
+#Address = GPIB0::12
+#Delay = 0.01 seconds
+#Comment= None
+#Type = Gaussmeter 455
+#Resource Address = GPIB0::12
+#ID = LSCI,MODEL455,4550271,06062006
+#Initial Field = 0.006560 T
+#_______________
+#__SWEEP 1__
+#
+#Name = SetField
+#Class Type = setBField
+#Instrument = Lock-in Amplifier
+#Address = GPIB0::24
+#Measurement Type = AuxOut
+#Port = 4
+#Delay = 0.1 seconds
+#Delay 2 = 1.0 seconds
+#Calibration Factor = 1.000000 T/V
+#Comment= None
+#Type = Lock-in Amplifier
+#Resource Address = GPIB0::24
+#ID = Stanford_Research_Systems,SR830,s/n83855,ver1.07 
+#Time Constant = 0.1
+#Sensitivity = 500 uV/pA
+#Reference Frequency = 408.200000 Hz
+#Sine Amplitude = 1.000000 V
+#Reference Source = Internal
+#Filter Status = Both
+#Datapoints = 10 StepSize = 0.100000 T
+#_______________
+#
+SetField (T)	 GetField (T)
+
+-2.000000000e-01	3.610000000e-03
+-1.000000000e-01	-4.190000000e-03
+0.000000000e+00	-2.720000000e-03
+1.000000000e-01	4.920000000e-03
+2.000000000e-01	1.307000000e-02
+2.000000000e-01	1.686000000e-02
+1.000000000e-01	1.780000000e-02
+0.000000000e+00	1.534000000e-02
+-1.000000000e-01	7.710000000e-03
+-2.000000000e-01	-9.000000000e-04
